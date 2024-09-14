@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form id="myForm">
+        <label for="learn">Which topic of DSA you want to learn?</label>
+        <select name="learn" id="course">
+            <option value="select">Choose one topic</option>
+            <option value="array">Array</option>
+            <option value="recusrsion">Recursion</option>
+            <option value="linkedlist">Linked List</option>
+            <option value="tree">Tree</option>
+            <option value="heap">Heaps</option>
+        </select><br><br>
+
+        <label for="rate1"> Rate your coding level: </label>
+        <input type="text" class="rate1" placeholder="Rate from 1 to 5"><br><br>
+        <label for="rate2"> Rate your knowledge level: </label>
+        <input type="text" class="rate2" placeholder="Rate from 1 to 5"><br><br>
+        <label for="rate3"> Rate your experience: </label>
+        <input type="text" class="rate3" placeholder="Rate from 1 to 5"><br><br>
+        <label for="rate4"> Enter your learning experience from 1 to 5: </label>
+        <input type="text" class="rate4" placeholder="Rate from 1 to 5"><br><br>
+        <button type="button" onclick="printValues()">Click</button>
+    </form>
+
+    <script>
+        function printValues() {
+            var a = document.getElementsByClassName("rate1")[0].value;
+            console.log("Rate 1: " + a);
+            var b = document.getElementsByClassName("rate2")[0].value;
+            console.log("Rate 2: " + b);
+            var c = document.getElementsByClassName("rate3")[0].value;
+            console.log("Rate 3: " + c);
+            var d = document.getElementsByClassName("rate4")[0].value;
+            console.log("Rate 4: " + d);
+        }
+
+
+        
+    </script>
+</body>
+</html>
